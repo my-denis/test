@@ -1,13 +1,15 @@
 import { useState } from 'react';
 
-const AnimationNumber = () => {
-  const [number, setNumber] = useState(0);
+ const AnimationNumber = () => {
+  const [number, setNumber] = useState(27856);
   if (number < 29128) {
     setTimeout(() => {
-      setNumber(Math.ceil(number) + 1); // Round number up to nearest whole number
-    }, 0.4);
+      setNumber(Math.ceil(number) + 1); 
+    }, 4);
   }
 
   return <span>{number}</span>;
 };
-export default AnimationNumber;
+export default AnimationNumber
+
+
