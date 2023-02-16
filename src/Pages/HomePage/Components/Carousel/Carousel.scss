@@ -1,0 +1,112 @@
+.wrapper {
+  padding: 104px 0;
+  background-color: #ffbd9e;
+  .swiper-wrapper {
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    position: relative;
+    .carousel-text {
+      position: absolute;
+      max-width: 281px;
+      text-align: center;
+      color: #fff;
+    }
+    .carousel-title {
+      font-weight: bold;
+      transition: all 0.3s ease-in;
+    }
+    .carousel-subtitle {
+      display: none;
+    }
+    img {
+      transition: all 0.1s ease-in;
+      width: 200px !important;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .swiper-slide-next {
+    img {
+      width: 310px !important;
+    }
+  }
+  .swiper-slide-prev {
+    img {
+      width: 310px !important;
+    }
+  }
+  .swiper-slide-active {
+    background-image: url(../../Assets/background-slider.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 450px !important;
+    .carousel-text {
+      color: #1e1a20;
+      padding-top: 60px;
+    }
+    .carousel-subtitle {
+      display: block;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 25%;
+      margin-bottom: 25px;
+      width: 186px !important;
+      height: 163px;
+      margin-right: 159px;
+      padding-bottom: 10px;
+
+      transition: all 0.2s ease-in;
+      transform: translate3d(-25%, 0, 0);
+    }
+    span {
+      display: none !important;
+    }
+  }
+  .swiper-pagination {
+    color: rgba(0, 0, 0, 0.2);
+  }
+  .swiper-pagination-current {
+    color: #000;
+  }
+  .carousel-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 135px;
+    padding-bottom: 13px;
+    position: relative;
+    z-index: 999;
+  }
+  .carousel-nav #prev-left {
+    width: 8px;
+    height: 15px;
+    padding: 0;
+    border: none;
+    background-image: url(../../Assets/nav-left.svg);
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .carousel-nav #next-right {
+    width: 8px;
+    height: 15px;
+    padding: 0;
+    border: none;
+    background-image: url(../../Assets/nav-right.svg);
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 72px 0;
+  }
+}

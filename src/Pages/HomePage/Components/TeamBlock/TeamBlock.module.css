@@ -1,0 +1,210 @@
+.TeamBlock {
+  padding: 0 80px;
+}
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 192px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #222433;
+  display: inline-block;
+  margin: 0 0 16px;
+}
+.text {
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 32px;
+  display: block;
+  text-align: center;
+  color: #1e1a20;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  max-width: 352px;
+  min-width: 288px;
+}
+
+.imagesContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 124px;
+}
+
+.team1 {
+  width: 30%;
+  display: inline-flex;
+  z-index: 1;
+  margin-top: 13px;
+}
+.team2 {
+  width: 30%;
+  display: inline-flex;
+  margin-top: 117px;
+  z-index: 1;
+}
+.team3 {
+  width: 30%;
+  display: inline-flex;
+  margin-top: 13px;
+  z-index: 1;
+}
+.team1 img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.team2 img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.team3 img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.dotted1 {
+  position: absolute;
+  top: 40px;
+  left: 230px;
+}
+.dotted2 {
+  position: absolute;
+  bottom: 0px;
+  right: 120px;
+  transform: rotate(190deg) scaleX(-1);
+}
+.path {
+  animation: dash 60s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .imagesContainer {
+    justify-content: space-evenly;
+  }
+  .team1,
+  .team2,
+  .team3 {
+    width: 50%;
+  }
+  .dotted2 {
+    bottom: 208px;
+    right: 90px;
+    transform: rotate(163deg) scaleX(-1);
+  }
+}
+@media screen and (max-width: 768px) {
+  .TeamBlock {
+    padding: 0 40px 0;
+  }
+  .imagesContainer {
+    margin-top: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  .team1 {
+    align-self: flex-start;
+  }
+  .team2 {
+    align-self: flex-end;
+    margin: auto 0;
+    width: 46%;
+  }
+  .team3 {
+    align-self: flex-start;
+  }
+  .team1 img {
+    min-width: 200px;
+  }
+  .team2 img {
+    min-width: 180px;
+  }
+  .team3 img {
+    min-width: 200px;
+  }
+
+  .dotted1 {
+    transform: rotate(26deg) scaleX(1);
+    top: 146px;
+    left: 115px;
+  }
+
+  .dotted2 {
+    right: 116px;
+    bottom: 188px;
+    transform: rotate(349deg) scaleX(-1);
+  }
+  .dotted1 svg,
+  .dotted2 svg {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .dotted1 {
+    transform: rotate(26deg) scaleX(1);
+    top: 122px;
+    left: 92px;
+  }
+  .dotted2 {
+    right: 116px;
+    bottom: 188px;
+    transform: rotate(349deg) scaleX(-1);
+  }
+  .dotted1 svg,
+  .dotted2 svg {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .TeamBlock {
+    padding: 0 20px;
+  }
+
+  .team2 {
+    align-self: flex-end;
+    margin: auto 0;
+    width: 64%;
+  }
+  .dotted2 {
+    right: 37px;
+    bottom: 191px;
+    transform: rotate(284deg) scaleX(1);
+  }
+  .dotted1 {
+    transform: rotate(26deg) scaleX(1);
+    top: 54px;
+    left: 73px;
+  }
+
+  .dotted1 svg,
+  .dotted2 svg {
+    width: 250px;
+    display: inline-block;
+  }
+}

@@ -1,0 +1,153 @@
+.contactUs {
+  padding: 192px 160px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mainText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+  text-transform: capitalize;
+  color: #222433;
+  display: inline;
+  margin-bottom: 40px;
+  margin-top: 0;
+  max-width: 480px;
+}
+.text {
+  max-width: 423px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #1e1a20;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  margin-top: 0;
+  margin-bottom: 56px;
+}
+.button {
+  padding: 16px 36px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #f2726c;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  background-color: #222433;
+  transform: scale(1.05);
+}
+.accordion {
+  border-bottom: 1px solid rgba(30, 26, 32, 0.2);
+  max-width: 459px;
+}
+.accordionHead {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+}
+.accordionTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color: #1e1a20;
+  opacity: 0.9;
+}
+.accordionShow {
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1e1a20;
+  opacity: 0.9;
+  animation: hide 0.15s ease-in-out;
+}
+.accordionHiden {
+  font-size: 0;
+  transition: font-size 0.1s;
+}
+
+@media (max-width: 1240px) {
+  .contactUs {
+    padding: 120px 80px;
+  }
+  .title {
+    font-size: 34px;
+  }
+  .text {
+    font-size: 16px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    justify-content: center;
+  }
+  .mainText {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactUs {
+    padding: 100px 20px;
+  }
+}
+@media (max-width: 471px) {
+  .accordionTitle {
+    padding-right: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 32px 0;
+    
+  }
+  .text {
+    font-size: 15px;
+    max-width: 100%;
+    line-height: 175%;
+    margin-bottom: 30px;
+  }
+  .title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .mainText {
+    margin-bottom: 32px;
+  }
+  .accordionShow {
+    font-size: 15px;
+    line-height: 175%;
+    margin-bottom: 24px;
+  }
+}
+
+@keyframes hide {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  50% {
+    font-size: 16px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

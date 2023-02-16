@@ -1,0 +1,166 @@
+.getStarted {
+  padding: 0 80px;
+}
+.container {
+  max-width: 1120px;
+  background-color: #ffbd9e;
+  margin: 0 auto;
+  padding: 104px 80px;
+  border-radius: 20px;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  max-width: 100%;
+  min-width: 288px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+  text-transform: capitalize;
+  color: #222433;
+  margin-bottom: 40px;
+}
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #1e1a20;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  max-width: 384px;
+  min-width: 312px;
+}
+.log {
+  text-align: center;
+  background-color: #f7f3f4;
+  position: relative;
+  max-width: 450px;
+  min-width: 339px;
+  border-radius: 16px;
+  padding: 40px 55px;
+}
+.log::after {
+  content: '';
+  position: absolute;
+  background-image: url('../../Assets/form-leafs.svg');
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 100%;
+  top: -30px;
+  left: 350px;
+}
+.logTitle {
+  display: inline;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 56px;
+  color: #222433;
+}
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 312px;
+  min-width: 291px;
+  margin-top: 36px;
+}
+.input {
+  background: #ffffff;
+  border-radius: 40px;
+  margin-bottom: 16px;
+  outline: none;
+  border: none;
+  height: 48px;
+  padding-left: 24px;
+}
+.button {
+  margin-top: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
+  border-radius: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #f2726c;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  transform: scale(1.05);
+  background-color: #222433;
+}
+@media (max-width: 1280px) {
+  .container {
+    padding: 104px 40px;
+  }
+  .title {
+    font-size: 34px;
+  }
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    justify-content: center;
+    gap: 55px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .getStarted {
+    padding: 0;
+  }
+  .container {
+    padding: 45px 20px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .title {
+    font-size: 28px;
+    line-height: 150%;
+    display: contents;
+  }
+  .text {
+    /* max-width: 100%; */
+    font-size: 15px;
+    line-height: 175%;
+  }
+
+}
+
+@media (max-width: 471px) {
+  .form {
+    min-width: 100%;
+  }
+  .log {
+    display: flex;
+    flex-direction: column;
+    min-width: 291px;
+    align-items: center;
+  }
+  .logTitle {
+    display: contents;
+  }
+  
+  .log::after {
+    top: -30px;
+    left: 285px;
+    width: 70px;
+    background-size: contain;
+  }
+
+}

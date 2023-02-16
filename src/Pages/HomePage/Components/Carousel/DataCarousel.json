@@ -1,0 +1,32 @@
+[
+    {
+      "image": "imgCarousel/slider-watter.png",
+      "title": "Save watter",
+      "text":
+        "Taking on the issue of ensuring access to safe water requires worldwide effort."
+    },
+    {
+      "image": "imgCarousel/slider-trees.png",
+      "title": "Plant trees",
+      "text":
+        "Taking on the issue of ensuring access to safe water requires worldwide effort."
+    },
+    {
+      "image": "imgCarousel/slider-energy.png",
+      "title": "Save energy",
+      "text":
+        "Taking on the issue of ensuring access to safe water requires worldwide effort."
+    },
+    {
+      "image": "imgCarousel/slider-plastic.png",
+      "title": "Avoid plastic",
+      "text":
+        "Taking on the issue of ensuring access to safe water requires worldwide effort."
+    },
+    {
+      "image": "imgCarousel/slider-organic.png",
+      "title": "Choose organic",
+      "text":
+        "Taking on the issue of ensuring access to safe water requires worldwide effort."
+    }
+  ]
